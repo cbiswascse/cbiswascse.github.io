@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chandrima Biswas — Software Engineer specializing in Ruby on Rails, React, and Domain-Driven Design. Building scalable, high-performance applications."
+    />
+    <meta name="author" content="Chandrima Biswas" />
+    <title>Chandrima Biswas · Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles-v1.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A9%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <!-- Progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">CB</span>
+        <span class="nav__brand-name">Chandrima Biswas</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#talks">Talks</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle color theme"
+        >
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="20" height="20">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+            />
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="20" height="20">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__blob hero__blob--1"></div>
+          <div class="hero__blob hero__blob--2"></div>
+          <div class="hero__grid"></div>
+        </div>
+        <div class="hero__inner reveal">
+          <p class="hero__eyebrow">
+            <span class="hero__dot"></span> Software Engineer · Frankfurt, Germany
+          </p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="grad-text">Chandrima</span>.<br />
+            I turn complex problems into<br />
+            <span class="hero__rotate">
+              <span class="hero__rotate-word">elegant software.</span>
+              <span class="hero__rotate-word">scalable systems.</span>
+              <span class="hero__rotate-word">solved puzzles.</span>
+            </span>
+          </h1>
+          <p class="hero__lede">
+            A passionate Software Engineer with experience developing and
+            maintaining applications in
+            <strong>Ruby on Rails</strong>, <strong>React</strong>, and
+            <strong>Java</strong> — working in agile teams to build scalable,
+            high-performance products.
+          </p>
+          <div class="hero__cta">
+            <a href="#experience" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Let's connect</a>
+          </div>
+          <ul class="hero__stats">
+            <li>
+              <strong>4+</strong>
+              <span>Years building production software</span>
+            </li>
+            <li>
+              <strong>RoR · React</strong>
+              <span>Core stack &amp; daily craft</span>
+            </li>
+            <li>
+              <strong>DDD</strong>
+              <span>Domain-Driven Design advocate</span>
+            </li>
+          </ul>
+        </div>
+        <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- About / Story -->
+      <section class="section" id="about">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">A career that started with a puzzle</h2>
+        </div>
+        <div class="about">
+          <div class="about__story reveal">
+            <p class="about__lead">
+              Long before I wrote my first line of production code, I was the kid
+              who couldn't put a puzzle down.
+            </p>
+            <p>
+              Jigsaws, riddles, logic grids, the last stubborn corner of a Rubik's
+              cube — I loved the quiet thrill of staring at something tangled and
+              slowly watching it click into place. There's a very particular kind
+              of joy in that moment when scattered pieces suddenly become a clear
+              picture. What I didn't realize back then was that I was training for
+              a career.
+            </p>
+            <p>
+              When I discovered computer science, it felt like someone had handed
+              me an <em>infinite</em> box of puzzles. Every algorithm was a riddle,
+              every bug a mystery with a hidden cause, every system a structure
+              waiting to be understood and improved. The problem-solving instinct
+              that made me love games was exactly the instinct that great software
+              engineering rewards. I was hooked — and I still am.
+            </p>
+            <p>
+              That curiosity carried me from a Bachelor's in Computer Science in
+              Chittagong, through a Master's in Information Technology in Frankfurt,
+              into research roles in network security and railway systems, and
+              finally into engineering teams where I get to solve real problems for
+              real users every single day. Today I work with
+              <strong>Ruby on Rails</strong> and <strong>React</strong>, lean into
+              <strong>Domain-Driven Design</strong> and
+              <strong>Event Sourcing</strong>, and care deeply about writing code
+              that other people can read, trust, and build on.
+            </p>
+            <p>
+              At the heart of it, I'm still that same puzzle-solver — just with a
+              bigger box, better tools, and a team to solve alongside.
+            </p>
+            <div class="about__highlight">
+              <span aria-hidden="true">🧩</span>
+              <p>
+                I'm passionate about learning and exploring new technology that
+                improves the user experience — and keeps me growing as a developer.
+              </p>
+            </div>
+          </div>
+          <aside class="about__panel reveal">
+            <h3 class="about__panel-title">What I bring to the table</h3>
+            <ul class="bring">
+              <li>
+                <span class="bring__icon">⚙️</span>
+                <div>
+                  <strong>Software development know-how</strong>
+                  <p>Solid foundations across the full development lifecycle.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bring__icon">🤝</span>
+                <div>
+                  <strong>Agile collaboration</strong>
+                  <p>Working closely with cross-functional teams to ship value.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bring__icon">🔁</span>
+                <div>
+                  <strong>Git, CI/CD &amp; testing</strong>
+                  <p>Reliable pipelines and well-tested, maintainable code.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bring__icon">💡</span>
+                <div>
+                  <strong>Problem-solving mindset</strong>
+                  <p>A genuine motivation to make software better.</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section section--alt" id="experience">
+        <div class="section__head reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Work experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="tcard reveal">
+            <div class="tcard__rail"><span class="tcard__dot tcard__dot--live"></span></div>
+            <div class="tcard__body">
+              <header class="tcard__head">
+                <div>
+                  <h3 class="tcard__role">Software Engineer</h3>
+                  <p class="tcard__org">CHI Deutschland Cargo Handling GmbH · Full-time</p>
+                </div>
+                <div class="tcard__meta">
+                  <span class="badge badge--live">Current</span>
+                  <span class="tcard__dates">Aug 2022 – Present · 3 yrs 11 mos</span>
+                  <span class="tcard__loc">Frankfurt am Main, Germany · Hybrid</span>
+                </div>
+              </header>
+              <ul class="tcard__points">
+                <li>
+                  Develop and maintain web applications with the
+                  <strong>Ruby on Rails</strong> framework, building user
+                  interfaces and interactive components in <strong>React</strong>.
+                </li>
+                <li>
+                  Take an active role in code reviews, troubleshooting sessions,
+                  and knowledge-sharing to foster a collaborative, growth-oriented
+                  team.
+                </li>
+                <li>
+                  Participate in deployments to hosting platforms such as
+                  <strong>Heroku</strong> and <strong>AWS</strong>, tracking
+                  changes across the lifecycle with <strong>Git</strong>.
+                </li>
+                <li>
+                  Collaborate with designers, product owners, and stakeholders to
+                  understand requirements, user stories, and business goals.
+                </li>
+                <li>
+                  Drive Agile ceremonies — sprint planning, stand-ups,
+                  retrospectives, and sprint reviews.
+                </li>
+              </ul>
+              <ul class="chips">
+                <li>Ruby on Rails</li>
+                <li>Domain-Driven Design</li>
+                <li>Event Sourcing</li>
+                <li>React Native</li>
+                <li>React.js</li>
+                <li>Git</li>
+                <li>Heroku</li>
+                <li>Datadog</li>
+                <li>Scrum</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <div class="tcard__rail"><span class="tcard__dot"></span></div>
+            <div class="tcard__body">
+              <header class="tcard__head">
+                <div>
+                  <h3 class="tcard__role">Software Engineer (Consultant)</h3>
+                  <p class="tcard__org">Riverland Reply · Full-time</p>
+                </div>
+                <div class="tcard__meta">
+                  <span class="tcard__dates">May 2022 – Jul 2022 · 3 mos</span>
+                  <span class="tcard__loc">Munich, Bavaria, Germany</span>
+                </div>
+              </header>
+              <ul class="tcard__points">
+                <li>
+                  Worked as a consultant delivering software solutions within a
+                  fast-paced professional services environment.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <div class="tcard__rail"><span class="tcard__dot"></span></div>
+            <div class="tcard__body">
+              <header class="tcard__head">
+                <div>
+                  <h3 class="tcard__role">Studentische Hilfskraft (Working Student)</h3>
+                  <p class="tcard__org">
+                    Institut für Bahnsysteme und Bahntechnik · TU Darmstadt · Part-time
+                  </p>
+                </div>
+                <div class="tcard__meta">
+                  <span class="tcard__dates">Sep 2019 – Oct 2020 · 1 yr 2 mos</span>
+                  <span class="tcard__loc">Technische Universität Darmstadt</span>
+                </div>
+              </header>
+              <ul class="tcard__points">
+                <li>
+                  Assisted with maintenance and further development of the
+                  “Befehlssystem” web application.
+                </li>
+                <li>Integrated dynamic features driven by user demand.</li>
+                <li>
+                  Built the backend in <strong>Java</strong> and <strong>JSP</strong>,
+                  with HTML, CSS, and JavaScript on the frontend.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tcard reveal">
+            <div class="tcard__rail"><span class="tcard__dot"></span></div>
+            <div class="tcard__body">
+              <header class="tcard__head">
+                <div>
+                  <h3 class="tcard__role">Studentische Hilfskraft (Working Student)</h3>
+                  <p class="tcard__org">
+                    Network Security Research Group · Frankfurt University of Applied
+                    Sciences · Part-time
+                  </p>
+                </div>
+                <div class="tcard__meta">
+                  <span class="tcard__dates">Oct 2019 – Dec 2019 · 3 mos</span>
+                  <span class="tcard__loc">Frankfurt am Main, Germany</span>
+                </div>
+              </header>
+              <ul class="tcard__points">
+                <li>
+                  Visualized network behavior for Network Performance Monitoring.
+                </li>
+                <li>
+                  Helped implement a network virtualization prototype in
+                  <strong>Python</strong>.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Talks & Seminars -->
+      <section class="section" id="talks">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Talks &amp; seminars</h2>
+          <p class="section__sub">
+            Sharing knowledge is how I learn best — and how teams grow together.
+          </p>
+        </div>
+        <div class="talks">
+          <article class="talk reveal">
+            <div class="talk__top">
+              <span class="talk__tag">Conference</span>
+              <span class="talk__year">2026</span>
+            </div>
+            <h3 class="talk__title">DDD Europe — Participant</h3>
+            <p class="talk__desc">
+              Attended DDD Europe, immersing myself in the latest thinking on
+              Domain-Driven Design, modeling, and software architecture alongside
+              practitioners from across the continent.
+            </p>
+            <ul class="chips chips--sm">
+              <li>Domain-Driven Design</li>
+              <li>Architecture</li>
+            </ul>
+          </article>
+
+          <article class="talk reveal">
+            <div class="talk__top">
+              <span class="talk__tag talk__tag--alt">Internal talks</span>
+              <span class="talk__year">Ongoing</span>
+            </div>
+            <h3 class="talk__title">Internal tech talks on new topics</h3>
+            <p class="talk__desc">
+              I regularly give internal talks to my team, most often about
+              Domain-Driven Design — translating new concepts into practical,
+              shared knowledge that the whole team can apply.
+            </p>
+            <ul class="chips chips--sm">
+              <li>DDD</li>
+              <li>Knowledge sharing</li>
+              <li>Mentoring</li>
+            </ul>
+          </article>
+
+          <article class="talk reveal">
+            <div class="talk__top">
+              <span class="talk__tag talk__tag--uni">University seminar</span>
+              <span class="talk__year">Seminar paper</span>
+            </div>
+            <h3 class="talk__title">Long Short-Term Memory (LSTM)</h3>
+            <p class="talk__desc">
+              Presented my seminar paper on Long Short-Term Memory networks at a
+              university seminar — breaking down how LSTMs handle sequential data
+              and long-range dependencies for an academic audience.
+            </p>
+            <ul class="chips chips--sm">
+              <li>Machine Learning</li>
+              <li>LSTM</li>
+              <li>Research</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section--alt" id="skills">
+        <div class="section__head reveal">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Skills &amp; toolbox</h2>
+        </div>
+        <div class="skills reveal">
+          <div class="skills__group">
+            <h3>Languages &amp; frameworks</h3>
+            <ul class="chips chips--lg">
+              <li>Ruby on Rails</li>
+              <li>React.js</li>
+              <li>React Native</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C# / .NET</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Practices &amp; architecture</h3>
+            <ul class="chips chips--lg">
+              <li>Domain-Driven Design</li>
+              <li>Event Sourcing</li>
+              <li>Agile / Scrum</li>
+              <li>Software Testing</li>
+              <li>CI/CD</li>
+              <li>Code Review</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Platforms &amp; tooling</h3>
+            <ul class="chips chips--lg">
+              <li>Git</li>
+              <li>Heroku</li>
+              <li>AWS</li>
+              <li>Datadog</li>
+              <li>NuGet</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects & Education -->
+      <section class="section" id="projects">
+        <div class="section__head reveal">
+          <span class="section__index">05</span>
+          <h2 class="section__title">Selected projects</h2>
+          <p class="section__sub">
+            A trail of puzzles solved across research, academia, and code.
+          </p>
+        </div>
+        <div class="projects">
+          <article class="pcard reveal">
+            <span class="pcard__date">Feb 2020 – May 2020</span>
+            <h3 class="pcard__title">Kernel Logistic Regression with LearningAPI</h3>
+            <p class="pcard__desc">
+              Implemented kernel logistic regression on top of the provided
+              LearningAPI, with unit tests, packaging, and clean version control.
+            </p>
+            <ul class="chips chips--sm">
+              <li>C# .NET</li>
+              <li>xUnit</li>
+              <li>NuGet</li>
+              <li>Git</li>
+            </ul>
+          </article>
+
+          <article class="pcard reveal">
+            <span class="pcard__date">Dec 2019 – Apr 2020</span>
+            <h3 class="pcard__title">IoT Intrusion Alarm System for Smart Homes</h3>
+            <p class="pcard__desc">
+              Built an alarm system covering different intrusion scenarios, with a
+              browser-based visualization of the smart-home security prototype.
+            </p>
+            <ul class="chips chips--sm">
+              <li>Java (Spring Boot)</li>
+              <li>CoAP (Californium)</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="pcard reveal">
+            <span class="pcard__date">Dec 2019 – Mar 2020</span>
+            <h3 class="pcard__title">Real-Time Traffic Situation Predictor</h3>
+            <p class="pcard__desc">
+              A machine-learning application modeling real-time traffic situations —
+              low traffic, heavy traffic, and accidents.
+            </p>
+            <ul class="chips chips--sm">
+              <li>Python</li>
+              <li>Machine Learning</li>
+            </ul>
+          </article>
+
+          <article class="pcard reveal">
+            <span class="pcard__date">Nov 2019 – Mar 2020</span>
+            <h3 class="pcard__title">Charge Distribution &amp; Capacitance Visualizer</h3>
+            <p class="pcard__desc">
+              Implemented a function for charge distribution and capacitance,
+              visualized in 3D across a 7×7 square plate.
+            </p>
+            <ul class="chips chips--sm">
+              <li>C++</li>
+              <li>MATLAB</li>
+            </ul>
+          </article>
+
+          <article class="pcard reveal">
+            <span class="pcard__date">Aug 2016 – Mar 2017</span>
+            <h3 class="pcard__title">Android E-Shopping Application</h3>
+            <p class="pcard__desc">
+              Designed and analyzed use cases, implemented the GUI, and designed the
+              database for a full Android shopping experience.
+            </p>
+            <ul class="chips chips--sm">
+              <li>Android</li>
+              <li>Java</li>
+              <li>DBMS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section section--alt" id="education">
+        <div class="section__head reveal">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Academic career</h2>
+        </div>
+        <div class="edu">
+          <article class="ecard reveal">
+            <div class="ecard__year">2018 – 2021</div>
+            <div class="ecard__body">
+              <h3 class="ecard__deg">Master's degree · Information Technology</h3>
+              <p class="ecard__school">Frankfurt University of Applied Sciences</p>
+              <p class="ecard__desc">
+                A program designed to qualify both technical specialists and
+                executives in the IT industry.
+              </p>
+              <p class="ecard__label">Course highlights</p>
+              <ul class="chips chips--sm">
+                <li>Software Engineering</li>
+                <li>Cloud Computing</li>
+                <li>Distributed Software Systems</li>
+                <li>Internet of Things</li>
+                <li>Advanced Networking</li>
+                <li>Digital Switching &amp; Routing</li>
+                <li>Image Processing</li>
+              </ul>
+              <div class="ecard__thesis">
+                <strong>Thesis —</strong> An enhanced method for optimizing anomaly
+                detection with clustering algorithms, unified into a package:
+                analyzing six clustering algorithms, implementing a Python package
+                for anomaly detection, and evaluating each algorithm on accuracy,
+                run-time, and memory consumption.
+              </div>
+            </div>
+          </article>
+
+          <article class="ecard reveal">
+            <div class="ecard__year">2011 – 2016</div>
+            <div class="ecard__body">
+              <h3 class="ecard__deg">
+                B.Sc. · Computer Science and Engineering
+              </h3>
+              <p class="ecard__school">University of Chittagong</p>
+              <p class="ecard__desc">
+                Activities: Programming contests and organizing cultural programs.
+              </p>
+              <p class="ecard__label">Selected courses</p>
+              <ul class="chips chips--sm">
+                <li>Object-Oriented Programming</li>
+                <li>Algorithms Design &amp; Analysis</li>
+                <li>Database Systems</li>
+                <li>Operating Systems</li>
+                <li>Computer Networks</li>
+                <li>Compiler</li>
+                <li>Artificial Intelligence</li>
+                <li>Neural Networking</li>
+                <li>Computer Vision</li>
+                <li>Human-Computer Interaction</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--contact" id="contact">
+        <div class="contact reveal">
+          <p class="contact__eyebrow">📩 Let's build something together</p>
+          <h2 class="contact__title">
+            I'm always open to connecting with fellow tech professionals.
+          </h2>
+          <p class="contact__sub">
+            Let's exchange ideas, share knowledge, and grow together in the tech
+            community.
+          </p>
+          <div class="contact__actions">
+            <a
+              class="btn btn--primary"
+              href="https://www.linkedin.com/in/chandrimabiswas/"
+              target="_blank"
+              rel="noopener"
+            >
+              Connect on LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="mailto:hello@example.com">
+              Send an email
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Chandrima Biswas — Built with curiosity 🧩</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </footer>
+
+    <script src="script-v1.js"></script>
+  </body>
+</html>
